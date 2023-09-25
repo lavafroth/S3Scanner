@@ -185,7 +185,6 @@ func Run(version string) {
 		log.Debugf("using database URI from config: %s", dbConfig)
 		dbErr := db.Connect(dbConfig, true)
 		if dbErr != nil {
-			log.Error(dbErr)
 			os.Exit(1)
 		}
 	}
